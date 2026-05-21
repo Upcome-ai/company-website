@@ -38,7 +38,7 @@ export default function Agentic() {
               The next generation of companies will use software that can
               reason, retrieve information, coordinate workflows, access tools,
               and take action within defined boundaries. Upcome helps companies
-              identify where AI agents can create real value — then builds
+              identify where AI agents can create real value, then builds
               systems that are useful, secure, and reliable.
             </p>
             <div className="mt-7">
