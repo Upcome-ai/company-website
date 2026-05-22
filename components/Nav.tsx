@@ -1,11 +1,12 @@
-import { ArrowRight, BrandMark, ChevronDown } from "./Icons";
+import { ArrowRight, ChevronDown } from "./Icons";
+import Logo from "./Logo";
 
-const links = [
-  { href: "#services", label: "Services", caret: true },
-  { href: "#solutions", label: "Solutions", caret: true },
-  { href: "#work", label: "Work" },
+const links: { href: string; label: string; caret?: boolean }[] = [
+  { href: "#services", label: "Services" },
+  { href: "#solutions", label: "Solutions" },
+  // { href: "#work", label: "Work" },
   { href: "#about", label: "About" },
-  { href: "#insights", label: "Insights" },
+  // { href: "#insights", label: "Insights" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -17,15 +18,7 @@ export default function Nav() {
           aria-label="Primary"
           className="grid grid-cols-[auto_1fr_auto] items-center gap-8 py-4"
         >
-          <a
-            href="#"
-            className="flex items-center gap-3 font-serif text-[26px] tracking-[-0.01em] text-bone"
-          >
-            <span className="grid h-[34px] w-[34px] place-items-center rounded-[9px] bg-navy shadow-[inset_0_0_0_1px_rgba(242,237,226,0.06)]">
-              <BrandMark className="h-[22px] w-[22px]" />
-            </span>
-            Upcome
-          </a>
+          <Logo size="nav" />
 
           <div className="hidden justify-self-center md:flex items-center gap-1">
             {links.map((l) => (

@@ -6,10 +6,19 @@
   --page-pad: clamp(20px, 4vw, 56px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+section[id],
+article[id] {
+  scroll-margin-top: 5rem;
 }
 
 body {
@@ -224,12 +233,12 @@ body::before {
   animation: blink 1.1s infinite;
 }
 
-/* Process dashed line */
+/* Process dashed line — spans step 1 through step 5 only (gap-7, 5 cols) */
 .process-line {
   position: absolute;
   top: 22px;
   left: 22px;
-  right: 22px;
+  width: calc((100% - 4 * 1.75rem) * 4 / 5 + 4 * 1.75rem);
   height: 1px;
   background: repeating-linear-gradient(to right, rgba(91, 227, 200, 0.4) 0 6px, transparent 6px 12px);
 }

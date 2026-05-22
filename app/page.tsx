@@ -20,7 +20,7 @@ export default function Home() {
       <Why />
       <Audiences />
       <Process />
-      <Work />
+      {/* <Work /> */}
       <Agentic />
       <FinalCta />
       <Footer />

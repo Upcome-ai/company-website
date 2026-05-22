@@ -2,7 +2,7 @@ import { ArrowRightSm } from "./Icons";
 
 const audiences = [
   {
-    tag: "/ Founders",
+    tag: "Founders",
     title: (
       <>
         <em>Startup</em> founders
@@ -12,7 +12,7 @@ const audiences = [
     cta: "Build my MVP",
   },
   {
-    tag: "/ Operators",
+    tag: "Operators",
     title: (
       <>
         <em>Growing</em> companies
@@ -22,7 +22,7 @@ const audiences = [
     cta: "Scale my product",
   },
   {
-    tag: "/ On-chain",
+    tag: "On-chain",
     title: (
       <>
         <em>Web3</em> teams
@@ -32,7 +32,7 @@ const audiences = [
     cta: "Launch my Web3 product",
   },
   {
-    tag: "/ Intelligence",
+    tag: "Intelligence",
     title: (
       <>
         <em>AI-ready</em> businesses
@@ -63,7 +63,7 @@ export default function Audiences() {
             Built for teams with ambition <em>and urgency.</em>
           </h2>
           <p className="m-0 max-w-[44ch] text-[17px] leading-[1.55] text-bone-dim">
-            Pick your stage. Each path starts the same way — a strategy call to
+            Pick your stage. Each path starts the same way, with a strategy call to
             understand goals, constraints, and the most direct route forward.
           </p>
         </div>

@@ -42,13 +42,13 @@ export default function Agentic() {
               systems that are useful, secure, and reliable.
             </p>
             <div className="mt-7">
-              <a
+              {/* <a
                 href="#"
                 className="group inline-flex items-center gap-2.5 rounded-full bg-mint px-7 py-4 text-[15px] font-medium text-ink transition-all hover:bg-[#79EBD3]"
               >
                 Explore AI agent solutions
                 <ArrowRight className="h-[18px] w-[18px] transition-transform group-hover:translate-x-1" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -57,7 +57,7 @@ export default function Agentic() {
             className="rounded-rad border border-navy-line bg-ink/60 p-6"
           >
             <div className="mb-4.5 flex items-center justify-between border-b border-dashed border-bone/10 pb-3.5 font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
-              <span>// agent.usecases</span>
+              <span>agent.usecases</span>
               <span className="live-dot inline-flex items-center gap-1.5 text-mint">
                 live
               </span>

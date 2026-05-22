@@ -1,10 +1,34 @@
 import type { Metadata } from "next";
+import androidIcon from "@/images/Favicons/Android.png";
+import browserIcon from "@/images/Favicons/browser.png";
+import iPhoneIcon from "@/images/Favicons/iPhone.png";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Upcome — Build the products of the agentic era.",
+  title: "AI Software Product Development Company | Upcome",
   description:
-    "Upcome helps startups and companies build revenue-producing software products, AI agents, web platforms, mobile apps, blockchain systems, and cloud infrastructure.",
+    "Upcome builds AI agents, web platforms, mobile apps, blockchain systems, software products, and cloud infrastructure for startups and companies.",
+  openGraph: {
+    title: "Build the products of the agentic era.",
+    description:
+      "Upcome helps startups and companies build AI agents, web platforms, mobile apps, blockchain systems, software products, and cloud infrastructure.",
+    url: "https://upcome.ai",
+    siteName: "Upcome",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Build the products of the agentic era.",
+    description:
+      "Upcome helps startups and companies build AI agents, web platforms, mobile apps, blockchain systems, software products, and cloud infrastructure.",
+  },
+  icons: {
+    icon: [
+      { url: browserIcon.src, sizes: "32x32", type: "image/png" },
+      { url: androidIcon.src, sizes: "196x196", type: "image/png" },
+    ],
+    apple: [{ url: iPhoneIcon.src, sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({

@@ -2,12 +2,12 @@ const pillars = [
   {
     num: "i.",
     title: "Product judgment, not just dev capacity",
-    body: "We help decide what to build, what to cut, and what to prioritize — before code is written.",
+    body: "We help decide what to build, what to cut, and what to prioritize before code is written.",
   },
   {
     num: "ii.",
     title: "Real launch experience",
-    body: "Dozens of projects shipped, plus support for high-pressure Web3 environments handling real volume.",
+    body: "Dozens of projects shipped, plus support for high-pressure environments handling real volume.",
   },
   {
     num: "iii.",
@@ -17,7 +17,7 @@ const pillars = [
   {
     num: "iv.",
     title: "AI-ready thinking",
-    body: "We move past the demos — and build practical agents that improve real workflows.",
+    body: "We move past the demos and build practical agents that improve real workflows.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function Why() {
           </h2>
           <p className="m-0 max-w-[44ch] text-[17px] leading-[1.55] text-bone-dim">
             Most software agencies only execute tickets. We combine engineering
-            experience with entrepreneurial judgment — helping clients make
+            experience with entrepreneurial judgment. Helping clients make
             better product decisions while shipping quickly.
           </p>
         </div>

@@ -1,4 +1,5 @@
-import { ArrowRight, BrandMark } from "./Icons";
+import { ArrowRight } from "./Icons";
+import Logo from "./Logo";
 
 const services = [
   "Web Development",
@@ -15,30 +16,29 @@ const solutions = [
   "For Web3 Teams",
   "For AI-Ready Businesses",
 ];
-const company = ["About", "Work", "Insights", "Contact"];
-const elsewhere = ["LinkedIn ↗", "X / Twitter ↗", "GitHub ↗"];
-const legal = ["Privacy Policy", "Terms of Use"];
+const company = ["About", "Contact"];
+const elsewhere = ["LinkedIn ↗", "X / Twitter ↗"];
 
-export default function Footer() {
+export default function Footer({ className = "" }: { className?: string }) {
   return (
-    <footer className="relative z-10 border-t border-navy-line bg-[#081427] pb-8 pt-16 text-bone-dim">
+    <footer
+      className={`relative z-10 border-t border-navy-line bg-[#081427] pb-8 pt-16 text-bone-dim ${className}`}
+    >
       <div className="mx-auto w-full max-w-page page-pad">
         <div className="grid gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
           <div className="flex flex-col gap-4.5">
-            <a
-              href="#"
-              className="flex items-center gap-3 font-serif text-[24px] tracking-[-0.01em] text-bone"
-            >
-              <span className="grid h-[34px] w-[34px] place-items-center rounded-[9px] bg-navy shadow-[inset_0_0_0_1px_rgba(242,237,226,0.06)]">
-                <BrandMark className="h-[22px] w-[22px]" />
-              </span>
-              Upcome
-            </a>
+            <Logo size="footer" />
             <p className="m-0 max-w-[36ch] text-sm leading-[1.55] text-muted">
               A software development partner helping startups and companies
               build web platforms, mobile apps, AI agents, blockchain systems,
               and revenue-producing digital products.
             </p>
+            <a
+              href="mailto:contact@upcome.ai"
+              className="text-sm text-bone-dim transition-colors hover:text-mint"
+            >
+              contact@upcome.ai
+            </a>
 
             <div className="mt-2 flex flex-col gap-3.5 rounded-rad border border-navy-line bg-navy/40 p-5">
               <div className="font-serif text-[22px] leading-[1.2] text-bone">
@@ -54,15 +54,10 @@ export default function Footer() {
             </div>
           </div>
 
-          <FtrCol heading="Services" items={services} />
-          <FtrCol heading="Solutions" items={solutions} />
+          <FtrCol heading="Services" items={services} sectionHref="#services" />
+          <FtrCol heading="Solutions" items={solutions} sectionHref="#solutions" />
           <FtrCol heading="Company" items={company} />
-          <div>
-            <FtrCol heading="Elsewhere" items={elsewhere} />
-            <div className="mt-6">
-              <FtrCol heading="Legal" items={legal} />
-            </div>
-          </div>
+          <FtrCol heading="Elsewhere" items={elsewhere} />
         </div>
 
         <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-navy-line pt-6 font-mono text-[11px] uppercase tracking-[0.14em] text-muted sm:flex-row sm:items-center">
@@ -77,7 +72,15 @@ export default function Footer() {
   );
 }
 
-function FtrCol({ heading, items }: { heading: string; items: string[] }) {
+function FtrCol({
+  heading,
+  items,
+  sectionHref,
+}: {
+  heading: string;
+  items: string[];
+  sectionHref?: string;
+}) {
   return (
     <div>
       <h5 className="m-0 mb-3.5 font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-muted">
@@ -87,7 +90,7 @@ function FtrCol({ heading, items }: { heading: string; items: string[] }) {
         {items.map((it) => (
           <li key={it}>
             <a
-              href="#"
+              href={sectionHref ?? "#"}
               className="text-[14.5px] text-bone-dim transition-colors hover:text-mint"
             >
               {it}

@@ -10,7 +10,7 @@ type Service = {
 
 const services: Service[] = [
   {
-    num: "/ 01",
+    num: "01",
     title: "Web Development",
     body: "Fast, scalable web platforms, dashboards, marketplaces, SaaS products, landing pages, portals, and internal tools.",
     tags: "SaaS · Portals · Marketplaces",
@@ -24,7 +24,7 @@ const services: Service[] = [
     ),
   },
   {
-    num: "/ 02",
+    num: "02",
     title: "Mobile Apps",
     body: "Polished iOS and Android applications for consumers, internal teams, founders, and digital products.",
     tags: "iOS · Android · Cross-platform",
@@ -36,7 +36,7 @@ const services: Service[] = [
     ),
   },
   {
-    num: "/ 03",
+    num: "03",
     title: "AI Agents & Automation",
     body: "Custom AI agents, internal copilots, workflow automation, retrieval systems, and intelligent product features.",
     tags: "Copilots · RAG · Workflows",
@@ -49,10 +49,10 @@ const services: Service[] = [
     ),
   },
   {
-    num: "/ 04",
+    num: "04",
     title: "Blockchain & Smart Contracts",
     body: "Smart contracts, dApps, wallet integrations, token systems, Web3 dashboards, and blockchain infrastructure.",
-    tags: "EVM · Solidity · dApps",
+    tags: "EVM · Solidity · Solana · dApps",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2 L20 7 V17 L12 22 L4 17 V7 Z" />
@@ -61,7 +61,7 @@ const services: Service[] = [
     ),
   },
   {
-    num: "/ 05",
+    num: "05",
     title: "Backend & APIs",
     body: "Secure backend systems, databases, authentication, payment flows, integrations, APIs, and business logic.",
     tags: "REST · GraphQL · Auth · Pay",
@@ -73,7 +73,7 @@ const services: Service[] = [
     ),
   },
   {
-    num: "/ 06",
+    num: "06",
     title: "DevOps & Cloud",
     body: "Cloud infrastructure, CI/CD, deployments, monitoring, scaling, performance, and production reliability.",
     tags: "AWS · GCP · CI/CD · IaC",
@@ -107,7 +107,7 @@ export default function Services() {
           </h2>
           <p className="m-0 max-w-[44ch] text-[17px] leading-[1.55] text-bone-dim">
             Whether you are starting from an idea, improving an existing
-            product, or preparing your business for AI agents — Upcome gives
+            product, or preparing your business for AI agents. Upcome gives
             you the strategy, engineering, and execution to ship with
             confidence.
           </p>
@@ -135,26 +135,26 @@ export default function Services() {
                 <span className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-muted-2">
                   {s.tags}
                 </span>
-                <a
+                {/* <a
                   href="#"
                   aria-label={s.title}
                   className="arrow-link grid h-[30px] w-[30px] place-items-center rounded-full border border-bone/20 text-bone transition-all"
                 >
                   <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
+                </a> */}
               </div>
             </article>
           ))}
         </div>
 
-        <div className="mt-7 flex justify-end font-mono text-xs uppercase tracking-[0.14em]">
+        {/* <div className="mt-7 flex justify-end font-mono text-xs uppercase tracking-[0.14em]">
           <a
             href="#"
             className="inline-flex items-center gap-2 border-b border-bone/30 pb-1 text-bone transition-colors hover:border-mint hover:text-mint"
           >
             View all services →
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

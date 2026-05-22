@@ -27,13 +27,22 @@ export default function FinalCta() {
             Book a strategy call
             <ArrowRight className="h-[18px] w-[18px] transition-transform group-hover:translate-x-1" />
           </a>
-          <a
+          {/* <a
             href="#work"
             className="inline-flex items-center gap-2.5 rounded-full border border-bone/25 px-7 py-4 text-[16px] font-medium text-bone transition-all hover:border-bone/60 hover:bg-bone/[0.04]"
           >
             See selected work
-          </a>
+          </a> */}
         </div>
+        <p className="mt-8 font-mono text-[13px] text-bone-dim">
+          Or email{" "}
+          <a
+            href="mailto:contact@upcome.ai"
+            className="text-bone transition-colors hover:text-mint"
+          >
+            contact@upcome.ai
+          </a>
+        </p>
       </div>
     </section>
   );

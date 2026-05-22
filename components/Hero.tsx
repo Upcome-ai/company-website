@@ -9,7 +9,7 @@ export default function Hero() {
             ◆ Software · AI Agents · Web3 · DevOps
           </span>
           <span className="rounded-full border border-bone/20 bg-bone/[0.02] px-3 py-1.5 text-bone-dim">
-            Est. workshop — 7+ yrs together
+            7+ yrs together
           </span>
         </div>
 
@@ -27,16 +27,15 @@ export default function Hero() {
             <p className="m-0 mb-[22px] max-w-[38ch] text-[17px] leading-[1.55] text-bone-dim">
               Upcome helps founders and companies build modern web platforms,
               mobile apps, AI agents, blockchain systems, and scalable digital
-              products —{" "}
+              products{" "}
               <strong className="font-medium text-bone">
-                engineered like the outcome matters
+              built to deliver real outcomes
               </strong>
               .
             </p>
             <p className="m-0 mb-[22px] max-w-[38ch] text-[17px] leading-[1.55] text-muted">
               A team of developers and entrepreneurs who have helped launch
-              dozens of projects and supported teams through high-stakes Web3
-              cycles.
+              dozens of projects and supported teams through high-stakes cycles.
             </p>
             <div className="mt-3 flex flex-wrap gap-2.5">
               <a
@@ -64,7 +63,7 @@ export default function Hero() {
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             <Stat num="7" emSuffix="+" label="Years building together" />
             <Stat num="40" emSuffix="+" label="Products launched" />
-            <Stat num="$M" emSuffix="s" label="In Web3 activity supported" />
+            <Stat num="$M" emSuffix="s" label="In activity supported" />
             <Stat num="1" label="Team end-to-end" />
           </div>
         </div>
