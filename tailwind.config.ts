@@ -49,6 +49,7 @@ const config: Config = {
         blink: "blink 1.1s infinite",
         pulse2: "pulse2 1.6s infinite",
         marquee: "marquee 64s linear infinite",
+        marqueeslow: "marquee 24s linear infinite",
       },
       keyframes: {
         blink: {

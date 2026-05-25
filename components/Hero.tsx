@@ -29,11 +29,11 @@ export default function Hero() {
               mobile apps, AI agents, blockchain systems, and scalable digital
               products{" "}
               <strong className="font-medium text-bone">
-              built to deliver real outcomes
+                built to deliver real outcomes
               </strong>
               .
             </p>
-            <p className="m-0 mb-[22px] max-w-[38ch] text-[17px] leading-[1.55] text-muted">
+            <p className="hidden md:block m-0 mb-[22px] max-w-[38ch] text-[17px] leading-[1.55] text-muted">
               A team of developers and entrepreneurs who have helped launch
               dozens of projects and supported teams through high-stakes cycles.
             </p>
@@ -56,7 +56,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-[clamp(56px,8vw,96px)] grid items-center gap-9 border-t border-navy-line pt-7 lg:grid-cols-[auto_1fr]">
-          <div className="max-w-[18ch] font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+          <div className="md:max-w-[18ch] font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
             Trusted by founders, operators, and product teams building the next
             generation of software.
           </div>

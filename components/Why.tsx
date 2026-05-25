@@ -33,7 +33,10 @@ export default function Why() {
             <span className="mr-2.5 inline-block h-1.5 w-1.5 rounded-full bg-mint shadow-[0_0_0_4px_rgba(91,227,200,0.12)]" />
             &nbsp; 02 — Why Upcome
           </span>
-          <span>Founder instincts × Engineering</span>
+          <span>
+            Founder instincts{" "}
+            <span className="hidden md:inline-block">× Engineering</span>{" "}
+          </span>
         </div>
 
         <div className="mb-[clamp(40px,5vw,64px)] grid items-end gap-12 lg:grid-cols-[1.1fr_1fr]">
@@ -48,23 +51,25 @@ export default function Why() {
         </div>
       </div>
 
-      <div className="grid border-y border-navy-line bg-navy-line gap-px grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-        {pillars.map((p) => (
-          <div
-            key={p.num}
-            className="flex min-h-[280px] flex-col gap-3.5 bg-ink px-7 pb-9 pt-8"
-          >
-            <div className="font-serif italic text-[44px] leading-none text-mint">
-              {p.num}
+      <div className="">
+        <div className="grid border border-navy-line bg-navy-line gap-px grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          {pillars.map((p) => (
+            <div
+              key={p.num}
+              className="flex min-h-[280px] flex-col gap-3.5 bg-ink px-7 pb-9 pt-8"
+            >
+              <div className="font-serif italic text-[44px] leading-none text-mint">
+                {p.num}
+              </div>
+              <h4 className="m-0 text-[20px] font-medium leading-[1.18] tracking-[-0.02em] text-bone">
+                {p.title}
+              </h4>
+              <p className="m-0 text-[15px] leading-[1.55] text-bone-dim">
+                {p.body}
+              </p>
             </div>
-            <h4 className="m-0 text-[20px] font-medium leading-[1.18] tracking-[-0.02em] text-bone">
-              {p.title}
-            </h4>
-            <p className="m-0 text-[15px] leading-[1.55] text-bone-dim">
-              {p.body}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -22,25 +22,25 @@ const elsewhere = ["LinkedIn ↗", "X / Twitter ↗"];
 export default function Footer({ className = "" }: { className?: string }) {
   return (
     <footer
-      className={`relative z-10 border-t border-navy-line bg-[#081427] pb-8 pt-16 text-bone-dim ${className}`}
+      className={`relative z-10 border-t border-navy-line bg-[#081427] pb-2 pt-16 text-bone-dim ${className}`}
     >
       <div className="mx-auto w-full max-w-page page-pad">
         <div className="grid gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
           <div className="flex flex-col gap-4.5">
             <Logo size="footer" />
-            <p className="m-0 max-w-[36ch] text-sm leading-[1.55] text-muted">
+            <p className="mt-4 max-w-[36ch] text-sm leading-[1.55] text-muted">
               A software development partner helping startups and companies
               build web platforms, mobile apps, AI agents, blockchain systems,
               and revenue-producing digital products.
             </p>
             <a
               href="mailto:contact@upcome.ai"
-              className="text-sm text-bone-dim transition-colors hover:text-mint"
+              className="text-sm text-bone-dim transition-colors hover:text-mint mt-2"
             >
               contact@upcome.ai
             </a>
 
-            <div className="mt-2 flex flex-col gap-3.5 rounded-rad border border-navy-line bg-navy/40 p-5">
+            <div className="mt-4 flex flex-col gap-3.5 rounded-rad border border-navy-line bg-navy/40 p-5">
               <div className="font-serif text-[22px] leading-[1.2] text-bone">
                 Ready to build what comes next?
               </div>
@@ -55,7 +55,11 @@ export default function Footer({ className = "" }: { className?: string }) {
           </div>
 
           <FtrCol heading="Services" items={services} sectionHref="#services" />
-          <FtrCol heading="Solutions" items={solutions} sectionHref="#solutions" />
+          <FtrCol
+            heading="Solutions"
+            items={solutions}
+            sectionHref="#solutions"
+          />
           <FtrCol heading="Company" items={company} />
           <FtrCol heading="Elsewhere" items={elsewhere} />
         </div>

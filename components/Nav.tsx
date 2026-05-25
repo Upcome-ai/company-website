@@ -16,7 +16,7 @@ export default function Nav() {
       <div className="mx-auto w-full max-w-page page-pad">
         <nav
           aria-label="Primary"
-          className="grid grid-cols-[auto_1fr_auto] items-center gap-8 py-4"
+          className="grid grid-cols-2 md:grid-cols-[1fr_auto_1fr]  items-center gap-8 py-4"
         >
           <Logo size="nav" />
 
@@ -33,7 +33,7 @@ export default function Nav() {
             ))}
           </div>
 
-          <div className="flex items-center gap-2.5">
+          <div className="flex justify-end items-center gap-2.5">
             <a
               href="#services"
               className="hidden sm:inline-flex items-center gap-2.5 rounded-full border border-bone/25 px-5 py-3 text-[15px] font-medium text-bone transition-all hover:border-bone/60 hover:bg-bone/[0.04]"
@@ -44,7 +44,7 @@ export default function Nav() {
               href="#contact"
               className="inline-flex items-center gap-2.5 rounded-full bg-mint px-5 py-3 text-[15px] font-medium text-ink transition-all hover:bg-[#79EBD3]"
             >
-              Book a strategy call
+              Booking
               <ArrowRight className="h-[18px] w-[18px]" />
             </a>
           </div>

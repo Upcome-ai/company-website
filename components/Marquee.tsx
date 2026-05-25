@@ -22,14 +22,15 @@ const items = [
 
 export default function Marquee() {
   const doubled = [...items, ...items];
+
   return (
     <div
       className="caps-fade relative overflow-hidden border-y border-navy-line py-7"
       aria-hidden="true"
     >
-      <div className="flex animate-marquee gap-12 whitespace-nowrap font-mono text-[13px] tracking-[0.04em] text-bone-dim">
+      <div className="flex w-max min-w-max animate-marqueeslow md:animate-marquee gap-12 whitespace-nowrap font-mono text-[13px] tracking-[0.04em] text-bone-dim">
         {doubled.map((it, i) => (
-          <span key={i} className="caps-item inline-flex items-center">
+          <span key={i} className="inline-flex shrink-0 items-center">
             {it}
           </span>
         ))}
